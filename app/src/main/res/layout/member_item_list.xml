@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="7dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="5dp"
+        android:layout_marginStart="7dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/memberName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Member Name    "
+                        android:textColor="#fdb501"
+                        android:textSize="24dp" />
+
+
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textStart"
+                            android:text="dda"/>
+                        <TextView
+                            android:id="@+id/phoneNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+
+                            android:textColor="#000"
+                            android:text="Phone no"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/mapicon"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="60dp"
+                                android:src="@drawable/googlemap"
+                                android:background="@color/white"
+                                android:padding="10dp"
+                                android:layout_gravity="center"
+                                />
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+                                android:layout_gravity="center_horizontal"
+                                >
+                                <TextView
+
+                                    android:id="@+id/txtlocation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:text="Location"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:paddingTop="10dp"
+                                    />
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iamge"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="80dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:src="@drawable/addimage" />
+
+                    <Button
+                        android:layout_alignParentRight="true"
+                         android:layout_marginTop="20dp"
+                        android:id="@+id/add_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iamge"
+                        android:text="Approve"
+                        style="@style/ApproveButton"
+                         />
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="6dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="320 Likes"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#F06A90B5"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:text="Status :"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#F06A90B5"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Pending"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#F06A90B5"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="8dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="14dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:weightSum="3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/roboto_bold"-->
+<!--                        android:text="Member Name    "-->
+<!--                        android:textColor="#fdb501"-->
+<!--                        android:textSize="24dp" />-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/addressd"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:padding="5dp"-->
+
+<!--                            android:textColor="#000"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:text="Salman pulliyil"/>-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/phoneNso"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="5dp"-->
+
+<!--                            android:textColor="#000"-->
+<!--                            android:text="Phone no"/>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <ImageButton-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:layout_height="60dp"-->
+<!--                                android:src="@drawable/googlemap"-->
+<!--                                android:background="@color/white"-->
+<!--                                android:padding="10dp"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                />-->
+<!--                            <androidx.cardview.widget.CardView-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_weight="4"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:padding="10dp"-->
+<!--                                android:layout_gravity="center_horizontal"-->
+<!--                                >-->
+<!--                                <TextView-->
+
+<!--                                    android:id="@+id/txtlocation"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="match_parent"-->
+
+<!--                                    android:text="Location"-->
+<!--                                    android:textAlignment="center"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textSize="18dp"-->
+<!--                                    android:paddingTop="10dp"-->
+<!--                                    />-->
+
+<!--                            </androidx.cardview.widget.CardView>-->
+
+
+<!--                        </LinearLayout>-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginEnd="8dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/rounded_button"-->
+<!--                        android:src="@drawable/addimage" />-->
+<!--                </RelativeLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_marginLeft="6dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:visibility="invisible"-->
+<!--                    android:layout_height="wrap_content">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="320 Likes"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:fontFamily="@font/roboto_regular"-->
+<!--                        android:textColor="#F06A90B5"-->
+<!--                        android:layout_height="wrap_content" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content">-->
+
+
+<!--                    <TextView-->
+<!--                        android:textAlignment="textEnd"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:text="Status :"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:fontFamily="@font/roboto_regular"-->
+<!--                        android:textColor="#F06A90B5"-->
+<!--                        android:layout_height="wrap_content" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content">-->
+
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="Pending"-->
+<!--                        android:layout_marginLeft="5dp"-->
+<!--                        android:fontFamily="@font/roboto_regular"-->
+<!--                        android:textColor="#F06A90B5"-->
+<!--                        android:layout_height="wrap_content" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+</LinearLayout>

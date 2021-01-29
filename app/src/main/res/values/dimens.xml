@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="headerTextSize">22sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginCardRadius">20dp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+
+    <dimen name="signup_text_margin_top">10dp</dimen>
+
+    <dimen name="et_left_margin">15dp</dimen>
+    <dimen name="et_right_margin">15dp</dimen>
+    <dimen name="et_top_margin">15dp</dimen>
+    <dimen name="et_bottum_margin">15dp</dimen>
+
+    <dimen name="menu_left">20dp</dimen>
+    <dimen name="menu_left2">10dp</dimen>
+    <dimen name="menu_right">20dp</dimen>
+    <dimen name="menu_right2">10dp</dimen>
+    <dimen name="menu_tope">30dp</dimen>
+    <dimen name="menu_tope2">20dp</dimen>
+    <dimen name="menu_bottum">30dp</dimen>
+    <dimen name="menu_bottum2">20dp</dimen>
+
+    <dimen name="common_tope">20dp</dimen>
+    <dimen name="common_tope1">10dp</dimen>
+    <dimen name="common_tope_2">5dp</dimen>
+    <dimen name="common_bottum">20dp</dimen>
+    <dimen name="common_bottum1">10dp</dimen>
+    <dimen name="common_left">20dp</dimen>
+    <dimen name="common_left1">10dp</dimen>
+    <dimen name="common_right">20dp</dimen>
+    <dimen name="common_right1">10dp</dimen>
+    <dimen name="common_btn">30dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="menu_tope3">40dp</dimen>
+
+    <dimen name="bottom_main">90dp</dimen>
+
+    <dimen name="text_size">18dp</dimen>
+
+</resources>
